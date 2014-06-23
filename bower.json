@@ -1,0 +1,29 @@
+{
+  "name": "testable-javascript",
+  "version": "0.0.0",
+  "authors": [
+    "Qiu Juntao <juntao.qiu@gmail.com>"
+  ],
+  "description": "Testable JavaScript",
+  "keywords": [
+    "Testable"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/abruzzi/tw-testable-javascript",
+  "private": true,
+  "dependencies": {
+      "jquery": "~2.0.3",
+      "underscore": "~1.5.2",
+      "jasmine-jquery": "~1.5.91",
+      "jasmine": "~1.3.1",
+      "foundation": "5.2.0"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "scripts/vendor",
+    "test",
+    "tests"
+  ]
+}
