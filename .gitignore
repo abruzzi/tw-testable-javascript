@@ -1,1 +1,3 @@
 scripts/vendor/
+node_modules/
+*.swp
