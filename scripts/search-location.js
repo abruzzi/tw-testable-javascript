@@ -7,7 +7,7 @@ function SearchLocation() {
 
         $('#search').on('click', function(e) {
             $.ajax({
-                url: 'http://localhost:9292/locations/'+location.val(),
+                url: 'http://locations-backend.herokuapp.com/locations/' + location.val(),
                 dataType: 'json',
                 success: function(data) {
                     searchResults.html('');
