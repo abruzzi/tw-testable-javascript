@@ -1,0 +1,37 @@
+### Maintainable JavaScript
+
+#### Get started
+
+First checkout the code:
+
+```sh
+git clone git@github.com:abruzzi/tw-testable-javascript.git
+```
+
+and initialize the environment:
+
+```sh
+cd tw-testable-javascript
+bower install
+```
+
+once the installation is finished, you should change the `backend` API endpoint to:
+
+```json
+url: 'http://localhost:9292/locations'
+```
+
+to the real one.
+
+#### Launch the app
+
+Once you have done the previous steps, you can run the server by:
+
+```sh
+./server.sh
+```
+
+If everything goes well, you can see some location information in the console of the brower if you 
+open `http://localhost:9999/`.
+
+
