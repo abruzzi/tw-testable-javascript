@@ -1,6 +1,6 @@
 $(function() {
     $.ajax({
-        url: 'http://localhost:9292/locations',
+        url: 'http://locations-backend.herokuapp.com/locations',
         success: function(data) {
             console.log(data);
         },
