@@ -1,0 +1,15 @@
+{
+  "devDependencies": {
+    "karma": "~0.12.16",
+    "gulp": "~3.8.0",
+    "karma-jasmine": "~0.1.5",
+    "karma-chrome-launcher": "~0.1.4",
+    "gulp-jshint": "~1.6.2",
+    "jshint-stylish": "~0.2.0",
+    "lodash": "~2.4.1",
+    "karma-phantomjs-launcher": "~0.1.4"
+  },
+  "scripts": {
+    "test": "./node_modules/karma/bin/karma start --single-run --browsers PhantomJS"
+  }
+}
