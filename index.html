@@ -5,21 +5,33 @@
     </head>
     <body>
         <div id="container">
+        </div>
+        <script src="scripts/vendor/jquery/dist/jquery.js" type="text/javascript" charset="utf-8"></script>
+        <script src="scripts/vendor/underscore/underscore.js" type="text/javascript" charset="utf-8"></script>
+        <script src="scripts/vendor/backbone/backbone.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="scripts/location-model.js" type="text/javascript" charset="utf-8"></script>
+        <script src="scripts/search-form-view.js" type="text/javascript" charset="utf-8"></script>
+        <script src="scripts/search-result-view.js" type="text/javascript" charset="utf-8"></script>
+        <script src="scripts/app.js" type="text/javascript" charset="utf-8"></script>
+
+        <script id="search-form-template" type="text/html-template">
             <input type="text" name="location" id="location" value="" placeholder="e.g.Melbourne" />
             <input type="button" name="search" id="search" value="Search" />
+        </script>
 
+        <script id="search-result-template" type="text/html-template">
             <div id="searchResults">
                 <h4>Search Results</h4>
                 <ul />
             </div>
+        </script>
 
+        <script id="liked-template" type="text/html-template">
             <div id="liked">
                 <h4>Locations I liked</h4>
                 <ul />
             </div>
-        </div>
-        <script src="scripts/vendor/jquery/dist/jquery.js" type="text/javascript" charset="utf-8"></script>
-        <script src="scripts/search-location.js" type="text/javascript" charset="utf-8"></script>
-        <script src="scripts/app.js" type="text/javascript" charset="utf-8"></script>
+        </script>
     </body>
 </html>

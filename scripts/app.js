@@ -1,4 +1,9 @@
 $(function() {
-    var searchLocation = new SearchLocation();
-    searchLocation.launch();
+    var collection = new LocationCollection();
+
+    var searcnForm = new SearchForm({
+        collection: collection
+    });
+
+    $("#container").append(searcnForm.render());
 });
