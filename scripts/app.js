@@ -1,4 +1,1 @@
-$(function() {
-    var searchLocation = new SearchLocation();
-    searchLocation.launch();
-});
+var app = angular.module('SearchApp', []);

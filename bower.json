@@ -12,11 +12,13 @@
   "homepage": "https://github.com/abruzzi/tw-testable-javascript",
   "private": true,
   "dependencies": {
-      "jquery": "~2.0.3",
-      "underscore": "~1.5.2",
-      "jasmine-jquery": "~1.5.91",
-      "jasmine": "~1.3.1",
-      "foundation": "5.2.0"
+    "jquery": "~2.0.3",
+    "underscore": "~1.5.2",
+    "jasmine-jquery": "~1.5.91",
+    "jasmine": "~1.3.1",
+    "foundation": "5.2.0",
+    "angular": "~1.2.18",
+    "angular-mocks": "~1.2.18"
   },
   "ignore": [
     "**/.*",
