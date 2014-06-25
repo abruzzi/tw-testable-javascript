@@ -3,7 +3,7 @@ var app = angular.module('SearchApp');
 app.factory('SearchService', ['$http', '$q', function($http, $q) {
     return {
         getUrl: function(term) {
-            var url = 'http://10.29.2.61:9292/locations';
+            var url = 'http://locations-backend.herokuapp.com/locations';
 
             if(term && term.length > 0) {
                 return url + '/' + term;
