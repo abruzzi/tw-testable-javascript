@@ -13,7 +13,7 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      'scripts/vendor/jquery/dist/jquery.js',
+      'scripts/vendor/jquery/jquery.js',
       'scripts/vendor/jasmine-jquery/lib/jasmine-jquery.js',
       'scripts/vendor/underscore/underscore.js',
       'scripts/*.js',
