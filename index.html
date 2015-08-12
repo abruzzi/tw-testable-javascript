@@ -29,7 +29,16 @@
                 <h4>Search Results</h4>
                 <ul>
                   <% _.each(locations, function(location) { %>
-                    <li><%= location.name %></li>
+                    <li>
+                      <div class="place">
+                        <h4><%= location.name %></h4>
+                        <p>
+                          <%= location.description %>
+                        </p>
+                        <button type="button" class="like">like</button>
+                      </div>
+
+                    </li>
                   <% }); %>
                 </ul>
             </div>

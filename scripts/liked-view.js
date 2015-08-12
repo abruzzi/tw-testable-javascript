@@ -1,4 +1,5 @@
 var LikedView = Backbone.View.extend({
+
     initialize: function(model) {
       this.model = model;
       this.model.bind('change:liked', _.bind(this.render, this));

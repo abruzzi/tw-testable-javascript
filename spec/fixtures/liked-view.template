@@ -1,0 +1,10 @@
+<script id="liked-template" type="text/html-template">
+    <div>
+        <h4>Locations I liked</h4>
+        <ul>
+          <% _.each(liked, function(loc) { %>
+            <li><%= loc.name %></li>
+          <% }); %>
+        </ul>
+    </div>
+</script>

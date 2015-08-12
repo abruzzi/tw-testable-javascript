@@ -1,4 +1,5 @@
 var SearchLocationView = Backbone.View.extend({
+
     initialize: function(model) {
       this.model = model;
     },
