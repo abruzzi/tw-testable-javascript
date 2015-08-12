@@ -24,7 +24,7 @@ curl http://locations-backend.herokuapp.com/locations
 Note that you can perform a serach by city name, like:
 
 ```sh
-curl http://locations-backend.herokuapp.com/locations/Melbourne
+curl http://locations-backend.herokuapp.com/locations?location=Melbourne
 ```
 
 will return all locations that are contain `Melbourne`.
