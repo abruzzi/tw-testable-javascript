@@ -1,9 +1,6 @@
 $(function() {
-    var collection = new LocationCollection();
+    var model = new LocationModel();
+    var searchLocationView = new SearchLocationView(model);
 
-    var searcnForm = new SearchForm({
-        collection: collection
-    });
-
-    $("#container").append(searcnForm.render());
+    $("#container").append(searchLocationView.render());
 });

@@ -1,5 +1,6 @@
-var LocationCollection = Backbone.Collection.extend({
-    url: function() {
-        return 'http://locations-backend.herokuapp.com/locations/' + this.term;
-    }
+var LocationModel = Backbone.Model.extend({
+  defaults: {
+    locations: [],
+    liked: []
+  }
 });
