@@ -35,6 +35,21 @@ describe("SearchResultView", function() {
       expect(first.find("h4")).toContainText("Melbourne");
     });
 
+    it("like button is clicked", function() {
+      var model = new Backbone.Model({"locations": locations, "liked": []});
+      var view = new SearchResultView(model);
+      
+      var html = view.render();
+
+      var first  = html.find("li").first();
+      first.find(".like").trigger("click");
+
+      var liked = model.get("liked")[0];
+
+      expect(liked.name).toEqual("Melbourne");
+      expect(liked.description).toEqual("Melbourne");
+    });
   });
+
 
 });
