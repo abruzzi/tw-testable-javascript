@@ -1,0 +1,4 @@
+<script id="search-form-template" type="text/html-template">
+    <input type="text" name="location" id="location" value="" placeholder="e.g.Melbourne" />
+    <input type="button" name="search" id="search" value="Search" />
+</script>

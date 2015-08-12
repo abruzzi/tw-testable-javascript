@@ -15,7 +15,7 @@ describe("SearchResultView", function() {
       {"name": "Melbourne", "description": "Melbourne"}
     ];
 
-    it("#render an empty list", function() {
+    it("render an empty list", function() {
       var model = new Backbone.Model({"locations": []});
       var view = new SearchResultView(model);
 
@@ -24,7 +24,7 @@ describe("SearchResultView", function() {
       expect(html.find("li").length).toEqual(0);
     });
 
-    it("#render an non empty list", function() {
+    it("render an non empty list", function() {
       var model = new Backbone.Model({"locations": locations});
       var view = new SearchResultView(model);
 
@@ -38,7 +38,7 @@ describe("SearchResultView", function() {
     it("like button is clicked", function() {
       var model = new Backbone.Model({"locations": locations, "liked": []});
       var view = new SearchResultView(model);
-      
+
       var html = view.render();
 
       var first  = html.find("li").first();
@@ -47,7 +47,7 @@ describe("SearchResultView", function() {
       var liked = model.get("liked")[0];
 
       expect(liked.name).toEqual("Melbourne");
-      expect(liked.description).toEqual("Melbourne");
+      expect($.trim(liked.description)).toEqual("Melbourne");
     });
   });
 

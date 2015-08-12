@@ -15,7 +15,7 @@ describe("LikedView", function() {
       {"name": "Melbourne", "description": "Melbourne"}
     ];
 
-    it("#render an empty list", function() {
+    it("render an empty list", function() {
       var model = new Backbone.Model({"liked": []});
       var view = new LikedView(model);
 
@@ -24,7 +24,7 @@ describe("LikedView", function() {
       expect(html.find("ul li").length).toEqual(0);
     });
 
-    it("#render an non empty list", function() {
+    it("render an non empty list", function() {
       var model = new Backbone.Model({"liked": locations});
       var view = new LikedView(model);
 
