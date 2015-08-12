@@ -1,0 +1,19 @@
+<script id="search-result-template" type="text/html-template">
+    <div>
+        <h4>Search Results</h4>
+        <ul>
+          <% _.each(locations, function(location) { %>
+            <li>
+              <div class="place">
+                <h4><%= location.name %></h4>
+                <p>
+                  <%= location.description %>
+                </p>
+                <button type="button" class="like">like</button>
+              </div>
+
+            </li>
+          <% }); %>
+        </ul>
+    </div>
+</script>
